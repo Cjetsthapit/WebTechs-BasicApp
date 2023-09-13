@@ -24,7 +24,6 @@ export default function HelloWorldApp() {
       <TextInput
         style={{...styles.edit,  color: textColor, borderColor: textColor}}
         onChangeText={(text) => setValue(text)}
-        clearTextOnFocus="true"
         value={value}
         placeholder="Enter anything"
         placeholderTextColor={textColor}
@@ -38,6 +37,8 @@ export default function HelloWorldApp() {
       <Text style={{...styles.title, color:textColor}}>{value}</Text>
 
       <Switch
+        thumbColor={textColor}
+        trackColor={textColor}
         onValueChange={toggleSwitch}
         value={isEnabled}
       />
