@@ -11,13 +11,13 @@ import {
 export default function HelloWorldApp() {
   const [value, setValue] = React.useState("");
   const [backgroundColor,  setBackgroundColor] = useState("#eee");
-  const [textColor,  setTextColor] = useState("#111");
+  const [textColor,  setTextColor] = useState("#333");
   const [isEnabled, setIsEnabled] = useState(false);
   // Task 1 and Task 2
   const toggleSwitch = () => {
     setIsEnabled((previousState) => !previousState);
-    setBackgroundColor((prevColor) => (prevColor === '#eee' ? '#111' : '#eee'));
-    setTextColor((prevColor) => (prevColor === '#eee' ? '#111' : '#eee'));
+    setBackgroundColor((prevColor) => (prevColor === '#eee' ? '#333' : '#eee'));
+    setTextColor((prevColor) => (prevColor === '#eee' ? '#333' : '#eee'));
   };
   return (
     <View style={{ ...styles.container, backgroundColor: backgroundColor }}>
